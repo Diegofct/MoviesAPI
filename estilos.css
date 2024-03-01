@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.pelicula {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.paginacion {
+    background: lightcoral;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.paginacion button {
+    height: 50%;
+    width: 10%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: lightgreen;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.paginacion button:hover {
+    background: green;
+}
